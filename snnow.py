@@ -171,7 +171,7 @@ class SportsnetNow:
                 episode = curr_item.attributes['e']
                 
                 try:
-                    description = curr_item.attibutes['ed']
+                    description = curr_item.attributes['ed']
                     show['plot'] = description.value.encode('utf-8').strip().decode('utf-8')
                 except:
                     show['plot'] = 'No description found'
